@@ -73,7 +73,7 @@ const Messages = () => {
 
   const peopleToShow = user?.activeRole === 'graduate' ? alumni : conversations.map(c => c.user);
 
- const [showContacts, setShowContacts] = useState(true);
+ 
 
   return (
     <div style={{

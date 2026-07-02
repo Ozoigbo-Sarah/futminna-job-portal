@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }) => {
 
   const switchUserRole = async (role) => {
     try {
-      const res = await switchRole({ role });
+      await switchRole({ role });
       localStorage.setItem('token', res.data.token);
       setToken(res.data.token);
       setUser(res.data.user);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { useAuth } from '../context/AuthContext';
-import { matchJobs, getAllJobs, uploadResume, applyForJob, getMyApplications, createJob, deleteJob, getJobApplications, updateApplicationStatus, getConversations, addRole, updateJobStatus } from '../utils/api';
+import { matchJobs, getAllJobs, uploadResume, applyForJob, getMyApplications, createJob, deleteJob, getJobApplications, updateApplicationStatus, getConversations, updateJobStatus } from '../utils/api';
 import { useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {

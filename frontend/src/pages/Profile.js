@@ -50,7 +50,7 @@ const Profile = () => {
         ...formData,
         skills: formData.skills.split(',').map(s => s.trim()).filter(s => s)
       };
-      const res = await axios.put('http://localhost:5000/api/auth/profile', dataToSend, {
+      await axios.put('http://localhost:5000/api/auth/profile', dataToSend, {
         headers: { Authorization: `Bearer ${token}` }
       });
       // Refresh user in context
