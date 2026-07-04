@@ -39,10 +39,10 @@ export const AuthProvider = ({ children }) => {
 
   const switchUserRole = async (role) => {
     try {
-      await switchRole({ role });
-      localStorage.setItem('token', res.data.token);
-      setToken(res.data.token);
-      setUser(res.data.user);
+      const result = await switchRole({ role });
+      localStorage.setItem('token', result.data.token);
+      setToken(result.data.token);
+      setUser(result.data.user);
       return true;
     } catch (error) {
       return false;
