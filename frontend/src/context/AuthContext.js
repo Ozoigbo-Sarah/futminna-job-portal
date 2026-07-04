@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
   };
 const addUserRole = async (roleData) => {
     try {
-      const res = await addRole(roleData);
+      await addRole(roleData);
       // Refresh user data immediately
       const userRes = await getMe();
       setUser(userRes.data);
