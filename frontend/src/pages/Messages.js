@@ -20,6 +20,7 @@ const Messages = () => {
     if (location.state?.selectedUser) {
       setSelectedUser(location.state.selectedUser);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
